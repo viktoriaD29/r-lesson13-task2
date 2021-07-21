@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import Product from './Product';
 
 function Products({ match }) {
@@ -14,7 +14,7 @@ function Products({ match }) {
           <Link to={`${match.url}/ball`}>Ball</Link>
         </li>
       </ul>
-      
+
       <Switch>
         <Route exact path={match.url}>
           <span>Selecy a product please</span>
